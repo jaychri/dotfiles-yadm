@@ -122,6 +122,7 @@ fi
 
 # some more ls aliases
 alias ll='ls -l'
+alias lla='ls -lA'
 alias la='ls -A'
 alias l='ls -CF'
 alias em='emacs -nw'
