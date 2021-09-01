@@ -23,7 +23,7 @@ Arch (AUR with yay):
  yay -Syu yadm-git &&
  yadm clone https://github.com/jaychri/dotfiles.git
 
-Debian (apt)
+Debian (apt):
  sudo apt install yadm &&
  yadm clone https://github.com/jaychri/dotfiles.git
 ```
