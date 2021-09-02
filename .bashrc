@@ -134,8 +134,9 @@ alias _='sudo'
 # alias pastebinit='pastebinit -P -a god'
 
 # backup aliases
-alias bk='_(){ cp $1 $1.bk; }; _'
-alias backup='_(){ D=$(date +%d-%m-%Y); cp $@ $@-$D.bk;echo "copied to $@-$D.bk"; }; _'
+  alias bk='_(){ cp $1 $1.bk; echo "copied to $1.bk"; }; _'
+  alias backup='_(){ D=$(date +%Y%m%d); cp $@ $@-$D.bk;echo "copied to $@-$D.bk"; }; _'
+# alias backup='_(){ D=$(date +%d-%m-%Y); cp $@ $@-$D.bk;echo "copied to $@-$D.bk"; }; _'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
