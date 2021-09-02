@@ -129,6 +129,14 @@ alias em='emacs -nw'
 alias dd='dd status=progress'
 alias _='sudo'
 
+# alias getip="curl icanhazip.com"
+# alias maps='telnet mapscii.me'
+# alias pastebinit='pastebinit -P -a god'
+
+# backup aliases
+alias bk='_(){ cp $1 $1.bk; }; _'
+alias backup='_(){ D=$(date +%d-%m-%Y); cp $@ $@-$D.bk;echo "copied to $@-$D.bk"; }; _'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
